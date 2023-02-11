@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.bar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+    color: black;
+    padding: 25px;
+}
+
+.nav {
+    padding: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    padding: 9px;
+}
+
+.nav a:hover {
+    color: red;
+}
+
+.services {
+    margin-top: 15px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.services p{
+    font-size: 30px;
+    margin-top: 15px;
+}
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h1 {
+    display: inline-block;
+}
+
+.h1::first-letter {
+    color: red;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.container .img {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+
+}
+
+.container .img:hover {
+    box-shadow: 2px 6px 40px rgba(0, 0, 0, 0.5);
+}
+
+.container .img .img1 {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.container .img .img1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .img p,h3 {
+    padding: 15px 0 5px;
+}
+
+.btn {
+    display: grid;
+    justify-content: center;
+}
+
+button {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 15px;
+}
+
+button:hover {
+    letter-spacing: 4px;
+}
+
+@media screen and (max-width:640px) and (min-width:500px) {
+    .nav {
+        display: flex;
+        font-size: 12px;
+    }
+
+    .nav a:hover {
+        color: rgb(255, 0, 30);
+        background: none;
+    }
+
+}
+
+@media screen and (max-width:499px) {
+    .logo {
+        font-size: 15px;
+    }
+
+    .nav {
+        display: grid;
+        font-size: 10px;
+    }
+
+    .nav a:hover {
+        color: rgb(0, 255, 179);
+        background: none;
+    }
+
+    .services {
+        margin-top: 70px;
+    }
+    .container .img .img1 {
+        height: 200px;
+    }
+}

@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("bgi.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.bar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 25px;
+}
+.nav {
+    padding: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    padding: 9px;
+}
+
+.nav a:hover {
+    color: aliceblue;
+}
+
+.head h1{
+    color: white;
+    display: grid;
+    justify-content: center;
+    padding-top: 90px;
+    font-size: 70px;
+}
+.para p{
+    color: white;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 80px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: red;
+    color:white;
+    font-weight: bold;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+button:hover{
+    letter-spacing: 4px;
+}
+button a{
+    text-decoration: none;
+    color: aliceblue;
+}
+@media screen and (max-width:640px) and (min-width:500px) {
+    .nav {
+        display: flex;
+        font-size: 12px;
+    }
+
+    .nav a:hover {
+        color: rgb(255, 0, 30);
+        background: none;
+    }
+    .head h1{
+        font-size: 50px;
+    }
+    
+}
+
+@media screen and (max-width:499px) {
+    .logo {
+        font-size: 15px;
+    }
+    
+    .nav {
+        display: grid;
+        font-size: 10px;
+    }
+
+
+    .nav a:hover {
+        color: rgb(0, 255, 179);
+        background: none;
+    }
+    .head h1{
+        font-size: 18px;
+    }
+    .para p{
+        font-size: 10px;
+    }
+    button{
+        font-size: 10px;
+    }
+}

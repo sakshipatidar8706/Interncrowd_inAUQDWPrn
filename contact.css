@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.bar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+    color: black;
+    padding: 25px;
+}
+
+.nav {
+    padding: 25px;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+    padding: 9px;
+}
+
+.nav a:hover {
+    color: red;
+}
+.contact{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+.contact h2{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact h2::first-letter{
+    color:red;
+}
+.message{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+ .form{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.08);
+    margin: 6px;
+}
+.form2{
+    margin: 40px;
+}
+.message .form:hover{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.message .form form input{
+   display:block ;
+   margin: 15px;
+   margin-left: 0px;
+   padding: 4px;
+   outline: none;
+}
+.message .form form button{
+    background-color: red;
+    color: aliceblue;
+    border: none;
+    width: 70px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+footer{
+    background-color: bisque;
+}
+.footer_container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.icon-container{
+    display: flex;
+    gap:20px;
+    color: darkolivegreen;
+}
+ul{
+    list-style: none;
+}
+.link-list h3{
+    margin-bottom: 10px;
+    color:gray;
+}
+.link-list ul li a{
+    text-decoration: none;
+    color: black;
+}
+.link-list ul li a:hover{
+    color:blue;
+}
+.news-letter input{
+    margin-top: 20px;
+}
+.news-letter h3{
+    padding-top: 15px;
+}
+
+@media screen and (max-width:640px) and (min-width:500px) {
+    .nav {
+        display: flex;
+        font-size: 12px;
+    }
+
+    .nav a:hover {
+        color: rgb(255, 0, 30);
+        background: none;
+    }
+    
+    
+}
+
+@media screen and (max-width:499px) {
+    .logo {
+        font-size: 15px;
+    }
+    
+    .nav {
+        display: grid;
+        font-size: 10px;
+    }
+
+
+    .nav a:hover {
+        color: rgb(0, 255, 179);
+        background: none;
+    }
+    .contact{
+        margin-top: 80px;
+    }
+    .message{
+        display: grid;
+    }
+    .form{
+        margin: 80px;
+        margin-top: 0;
+    }
+    .footer_container{
+        flex-direction: column;
+    }
+}
